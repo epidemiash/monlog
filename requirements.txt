@@ -1,0 +1,3 @@
+python-telegram-bot==20.3
+paramiko==2.12.0
+psutil==5.9.7

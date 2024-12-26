@@ -1,0 +1,7 @@
+{
+  "telegram_token": "ТОКЕН_ВАШЕГО_БОТА_ТЕЛЕГРАМ",
+  "telegram_channel": "-000000000000",
+  "allowed_user_id": 00000000,
+  "check_logs_interval": 500,
+  "servers": {}
+}
