@@ -2,7 +2,8 @@
 
 MonLog Bot — это инструмент для мониторинга логов серверов и отправки уведомлений через Telegram. 
 
-<img src="[images/example.png](https://anticod.ru/github/monlog1.jpg)" alt="Вид в боте">
+<img src="https://anticod.ru/github/monlog1.jpg" alt="Вид в боте">
+![Вид в боте]((https://anticod.ru/github/monlog1.jpg)
 
 ## 🚀 Установка
 
