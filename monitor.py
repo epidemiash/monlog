@@ -439,7 +439,10 @@ async def check_logs(update: Update, context: ContextTypes.DEFAULT_TYPE):
                                 prefix = ""
 
                             message = f"{prefix} на {name}: {line.strip()}"
-                            await context.bot.send_message(chat_id=channel_id, text=message)
+
+                            # Экранирование и отправка сообщения
+                            escaped_message = escape_markdown(message, version=2)
+                            await context.bot.send_message(chat_id=channel_id, text=escaped_message, parse_mode='MarkdownV2')
 
                             last_error_notification[name][keyword] = now
 
@@ -451,4 +454,5 @@ async def check_logs(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_message(chat_id=channel_id, text=error_message)
             except Exception as send_error:
                 print(f"Ошибка при отправке сообщения: {send_error}")
+
 
